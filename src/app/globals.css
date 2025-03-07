@@ -6,6 +6,11 @@
   src: url('/fonts/NeonVortex.ttf') format('truetype');
 }
 
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 body {
   background: black;
   background-size: cover;
