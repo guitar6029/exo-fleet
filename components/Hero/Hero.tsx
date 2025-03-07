@@ -14,7 +14,7 @@ export default function Hero() {
                 className="absolute inset-0 -z-10"
             />
             <div className="flex flex-col gap-4 p-4">
-                <h1>ExoFleet</h1>
+                <h1 className="neon-vortex text-7xl font-bold">ExoFleet</h1>
             </div>
         </div>
     );
