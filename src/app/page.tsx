@@ -12,7 +12,7 @@ export default function Home() {
           return (
             <div
               key={index}
-              className="h-[50vh] flex flex-col items-center justify-center"
+              className="flex flex-col items-center justify-center"
             >
               <Card
                 title={card.title}

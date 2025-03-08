@@ -19,7 +19,7 @@ export default function Card({
   linkSrc,
 }: CardProps) {
   const cardInfo = (
-    <div className="grid grid-cols-2 rounded-2xl border-2 border-neutral-200 h-[40rem]">
+    <div className="grid grid-cols-2 rounded-2xl border-2 border-neutral-200 w-[40rem]  h-[40rem]">
       <div
         className={`col-span-1 ${
           direction === "right" ? "order-last" : "order-first"
@@ -28,9 +28,7 @@ export default function Card({
         <Image
           src={imageSrc}
           alt={title ? title : "Card Image"}
-          width={500}
-          height={500}
-          className={`w-full h-full object-cover ${
+          className={`w-[100%] h-[100%] object-cover ${
             direction === "left"
               ? "rounded-tl-2xl rounded-bl-2xl"
               : "rounded-tr-2xl rounded-br-2xl"
