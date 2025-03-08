@@ -43,21 +43,23 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      {cards.map((card: TCard, index: number) => {
-        return (
-          <div
-            key={index}
-            className="min-h-screen flex flex-col items-center justify-center"
-          >
-            <Card
-              title={card.title}
-              description={card.description}
-              imageSrc={card.img}
-              direction={index % 2 === 0 ? "left" : "right"}
-            />
-          </div>
-        );
-      })}
+      <div className="flex flex-col mt-[10rem] p-10 gap-10">
+        {cards.map((card: TCard, index: number) => {
+          return (
+            <div
+              key={index}
+              className="h-[50vh] flex flex-col items-center justify-center"
+            >
+              <Card
+                title={card.title}
+                description={card.description}
+                imageSrc={card.img}
+                direction={index % 2 === 0 ? "left" : "right"}
+              />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
